@@ -2,9 +2,11 @@
 <h1>KDHNet</h1>
 <h3>A Knowledge-Driven Hybrid Network for Limited-Calibration SSVEP Decoding</h3>
 
-Zhentao He, Ziwei Wang, and Dongrui Wu
+Zhentao He<sup>1</sup>, Ziwei Wang<sup>1 :email:</sup>, and Dongrui Wu<sup>1 :email:</sup>
 
-School of Artificial Intelligence and Automation, Huazhong University of Science and Technology
+<sup>1</sup> School of Artificial Intelligence and Automation, Huazhong University of Science and Technology
+
+(<sup>:email:</sup>) Corresponding Authors
 </div>
 
 This repository contains the training and evaluation code for KDHNet and the eight baselines in the
