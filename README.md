@@ -9,17 +9,15 @@ Zhentao He<sup>1</sup>, Ziwei Wang<sup>1 :email:</sup>, and Dongrui Wu<sup>1 :em
 (<sup>:email:</sup>) Corresponding Authors
 </div>
 
-This repository contains the training and evaluation code for KDHNet and the eight baselines in the
-paper's main comparisons on three public SSVEP datasets. It includes the within-subject analysis-window
-and calibration-ratio experiments and the inter-subject experiments. Datasets, saved experimental
-results, pretrained weights, plotting scripts, and manuscript files are not included.
+> This repository contains the implementation of our paper: **KDHNet: A Knowledge-Driven Hybrid Network for Limited-Calibration SSVEP Decoding**, as well as the eight baselines on three public SSVEP datasets. It includes the within-subject analysis-window and calibration-ratio experiments and the inter-subject experiments. Datasets, saved experimental results, pretrained weights, plotting scripts, and manuscript files are not included.
 
-KDHNet combines a TD-RCA knowledge front-end with an SSVEPformer decoder. After filter-bank preprocessing,
-TDCA extracts class-discriminative projections and TRCA enhances trial-reproducible components.
-Sub-band weighting combines the responses before classification. The TDCA projection is estimated
-analytically and frozen; the TRCA filters, sub-band weights, and neural decoder are optimized during
-training. In the inter-subject setting, target-guided least-squares transformation aligns source trials
-using one labeled target trial per class.
+## Overview
+
+KDHNet combines a TD-RCA knowledge front-end with an SSVEPformer decoder. After filter-bank preprocessing, TDCA extracts class-discriminative projections and TRCA enhances trial-reproducible components. Sub-band weighting combines the responses before classification. The TDCA projection is estimated analytically and frozen; the TRCA filters, sub-band weights, and neural decoder are optimized during training. In the inter-subject setting, target-guided least-squares transformation aligns source trials using one labeled target trial per class.
+
+<div align="center">
+<img width="1345" height="714" alt="image" src="https://github.com/user-attachments/assets/51636cd3-feb7-47f5-ac75-a15f0ba1e425" />
+</div>
 
 ## Contents
 
