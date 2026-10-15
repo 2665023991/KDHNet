@@ -1,0 +1,137 @@
+[
+  {
+    "config": "etc/paper/intra_benchmark12_w0.4_r0.2.yaml",
+    "split": "intra",
+    "dataset": "benchmark12"
+  },
+  {
+    "config": "etc/paper/intra_benchmark12_w0.6_r0.2.yaml",
+    "split": "intra",
+    "dataset": "benchmark12"
+  },
+  {
+    "config": "etc/paper/intra_benchmark12_w0.8_r0.2.yaml",
+    "split": "intra",
+    "dataset": "benchmark12"
+  },
+  {
+    "config": "etc/paper/intra_benchmark12_w1_r0.2.yaml",
+    "split": "intra",
+    "dataset": "benchmark12"
+  },
+  {
+    "config": "etc/paper/intra_benchmark12_w1.2_r0.2.yaml",
+    "split": "intra",
+    "dataset": "benchmark12"
+  },
+  {
+    "config": "etc/paper/intra_benchmark12_w1_r0.4.yaml",
+    "split": "intra",
+    "dataset": "benchmark12"
+  },
+  {
+    "config": "etc/paper/intra_benchmark12_w1_r0.6.yaml",
+    "split": "intra",
+    "dataset": "benchmark12"
+  },
+  {
+    "config": "etc/paper/intra_benchmark12_w1_r0.8.yaml",
+    "split": "intra",
+    "dataset": "benchmark12"
+  },
+  {
+    "config": "etc/paper/loso_benchmark12.yaml",
+    "split": "loso",
+    "dataset": "benchmark12"
+  },
+  {
+    "config": "etc/paper/intra_benchmark40_w0.4_r0.5.yaml",
+    "split": "intra",
+    "dataset": "benchmark40"
+  },
+  {
+    "config": "etc/paper/intra_benchmark40_w0.6_r0.5.yaml",
+    "split": "intra",
+    "dataset": "benchmark40"
+  },
+  {
+    "config": "etc/paper/intra_benchmark40_w0.8_r0.5.yaml",
+    "split": "intra",
+    "dataset": "benchmark40"
+  },
+  {
+    "config": "etc/paper/intra_benchmark40_w1_r0.5.yaml",
+    "split": "intra",
+    "dataset": "benchmark40"
+  },
+  {
+    "config": "etc/paper/intra_benchmark40_w1.2_r0.5.yaml",
+    "split": "intra",
+    "dataset": "benchmark40"
+  },
+  {
+    "config": "etc/paper/intra_benchmark40_w1_r0.35.yaml",
+    "split": "intra",
+    "dataset": "benchmark40"
+  },
+  {
+    "config": "etc/paper/intra_benchmark40_w1_r0.7.yaml",
+    "split": "intra",
+    "dataset": "benchmark40"
+  },
+  {
+    "config": "etc/paper/intra_benchmark40_w1_r0.85.yaml",
+    "split": "intra",
+    "dataset": "benchmark40"
+  },
+  {
+    "config": "etc/paper/loso_benchmark40.yaml",
+    "split": "loso",
+    "dataset": "benchmark40"
+  },
+  {
+    "config": "etc/paper/loso_benchmark40_traditional.yaml",
+    "split": "loso",
+    "dataset": "benchmark40"
+  },
+  {
+    "config": "etc/paper/intra_beta_w0.4_r0.5.yaml",
+    "split": "intra",
+    "dataset": "beta"
+  },
+  {
+    "config": "etc/paper/intra_beta_w0.6_r0.5.yaml",
+    "split": "intra",
+    "dataset": "beta"
+  },
+  {
+    "config": "etc/paper/intra_beta_w0.8_r0.5.yaml",
+    "split": "intra",
+    "dataset": "beta"
+  },
+  {
+    "config": "etc/paper/intra_beta_w1_r0.5.yaml",
+    "split": "intra",
+    "dataset": "beta"
+  },
+  {
+    "config": "etc/paper/intra_beta_w1.2_r0.5.yaml",
+    "split": "intra",
+    "dataset": "beta"
+  },
+  {
+    "config": "etc/paper/intra_beta_w1_r0.75.yaml",
+    "split": "intra",
+    "dataset": "beta"
+  },
+  {
+    "config": "etc/paper/loso_beta.yaml",
+    "split": "loso",
+    "dataset": "beta"
+  },
+  {
+    "config": "etc/paper/loso_beta_traditional.yaml",
+    "split": "loso",
+    "dataset": "beta"
+  }
+]

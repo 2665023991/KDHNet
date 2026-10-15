@@ -1,0 +1,220 @@
+paths:
+  datasets:
+    benchmark12: datasets/benchmark12
+    benchmark40: datasets/benchmark40
+    beta: datasets/BETA
+  outputs:
+    root: results
+experiment:
+  split_mode: intra
+  task_mode: downstream_only
+  augmentation_task: standard
+  device: 0
+  num_threads: 5
+  random_seed: 42
+  decision_overhead_sec: 0
+  subject_ids: []
+  target_subject_ids: []
+  fold_ids: []
+  results_filename: experiment_results.csv
+  save_generated_signals: false
+  save_checkpoints: false
+  evaluation_pairs:
+  - train_view: clean
+    test_view: clean
+  method_view_overrides:
+    traditional:
+      train_view: clean
+      test_view: inherit
+    deep:
+      train_view: inherit
+      test_view: inherit
+    hybrid:
+      train_view: inherit
+      test_view: inherit
+    hybrid_knowledge:
+      train_view: clean
+      test_view: inherit
+    diffusion:
+      train_view: inherit
+      test_view: inherit
+    extra:
+      train_view: inherit
+      test_view: inherit
+  methods:
+    traditional:
+    - FBCCA
+    - TRCA
+    - TDCA
+    deep:
+    - EEGNet
+    - CCNN
+    - FBtCNN
+    - SSVEPNet
+    - SSVEPformer
+    hybrid:
+      knowledge:
+      - TD-RCA
+      deep:
+      - SSVEPformer
+    diffusion: []
+    extra: []
+    augmentation: []
+  run_name: intra_benchmark40_w1_r0.5
+  deep_acc_report: final
+dataset:
+  active: benchmark40
+  train_ratio: 0.5
+  window_sec: 1.0
+  fallback_num_folds: null
+datasets:
+  benchmark12:
+    num_trials: 180
+    num_channels: 8
+    sample_rate: 256
+    num_classes: 12
+    num_subjects: 10
+    start_frequency: 9.25
+    frequency_step: 0.5
+    max_timesteps: 1024
+  benchmark40:
+    num_trials: 240
+    num_channels: 9
+    sample_rate: 250
+    num_classes: 40
+    num_subjects: 35
+    start_frequency: 8.0
+    frequency_step: 0.2
+    max_timesteps: 1500
+    selected_channels:
+    - 47
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57
+    - 60
+    - 61
+    - 62
+  beta:
+    num_trials: 160
+    num_channels: 9
+    sample_rate: 250
+    num_classes: 40
+    num_subjects: 70
+    start_frequency: 8.0
+    frequency_step: 0.2
+    max_timesteps: 750
+    selected_channels:
+    - 47
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57
+    - 60
+    - 61
+    - 62
+training:
+  batch_size: 36
+  epochs: 300
+  cuda_index: 0
+signal:
+  num_filter_banks: 3
+  ensemble_size: 1
+  use_marginal_smoothing: true
+  knowledge_pipeline:
+    use_bandpass: false
+    use_mix_layer: false
+    use_filter_bank_output: true
+    mix_layer_fixed: false
+knowledge_methods:
+  trca:
+    use_all_channels: false
+    use_ensemble: true
+    num_components: 1
+    freeze_bandpass: false
+    freeze_knowledge_layer: false
+    freeze_filter_bank: false
+  tdca:
+    use_all_channels: true
+    lagging_length: 5
+    num_components: 1
+    freeze_bandpass: false
+    freeze_knowledge_layer: false
+    freeze_filter_bank: false
+  td_rca:
+    use_all_channels: true
+    lagging_length: 5
+    num_components: 3
+    tdca_n_components: 3
+    trca_n_components: 1
+    use_ensemble: false
+    freeze_bandpass: false
+    freeze_knowledge_layer: false
+    freeze_filter_bank: false
+    use_temporal_filter_bank: false
+    tdca_init_mode: analytical_frozen
+    trca_init_mode: analytical_trainable
+    fb_init_mode: analytical_trainable
+classification_models:
+  eegnet:
+    epochs: 300
+    batch_size: 30
+    lr: 0.005
+    weight_decay: 0.0001
+    use_scheduler: false
+  ccnn:
+    epochs: 300
+    batch_size: 30
+    lr: 0.001
+    weight_decay: 0.0001
+    use_scheduler: false
+  fbtcnn:
+    epochs: 500
+    batch_size: 30
+    lr: 0.001
+    weight_decay: 0.01
+    use_scheduler: false
+  convca:
+    epochs: 1000
+    batch_size: 30
+    lr: 0.001
+    weight_decay: 0.0
+    use_scheduler: false
+  ssvepnet:
+    epochs: 400
+    batch_size: 30
+    lr: 0.001
+    weight_decay: 0.0003
+    use_scheduler: true
+  ssvepformer:
+    epochs: 100
+    batch_size: 30
+    lr: 0.001
+    weight_decay: 0.0001
+    use_scheduler: true
+  ddgcnn:
+    epochs: 400
+    batch_size: 30
+    lr: 0.001
+    weight_decay: 0.0001
+    use_scheduler: true
+    lr_decay_factor: 0.75
+    scheduler_patience: 300
+    transform_class: DCD
+    activation: leakyrelu
+    normalization: layer
+    num_filters: 128
+  enh_ssvepformer:
+    epochs: 300
+    batch_size: 30
+    lr: 0.001
+    weight_decay: 0.0001
+    use_scheduler: true
+    d_model: 128
+    depth: 2
+    num_heads: 4
+    dropout: 0.5
+    num_harmonics: 5
+    ref_sources: []

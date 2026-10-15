@@ -1,0 +1,33 @@
+{
+  "source": "Author experiment server snapshot on 2026-10-15",
+  "python": "Python 3.10.14",
+  "source_sha256": {
+    "Data/__init__.py": "7e923b2d401ee3d7e9d840c0cbd02f6db43eb5afd18fa5b2c4f70111002cd21f",
+    "Data/core.py": "3beb243f0f5e27be730bf389bc3200031a2e14661b65fb763d7f66684f3afa4b",
+    "Data/signal_ops.py": "bab7fc877ca7d7acdb3a89112dabb270180d59f5433560e92750eac6402bf175",
+    "Data/transfer.py": "791b6252863b7bd647ca1454287b9a23319140356020e3db2e19cd648b166f00",
+    "Models/Classification/KNoW/CCA.py": "4cba5982b3729f5084c577f9abf79f0153bed9ae4b1eac68fed9d19305c7f6b2",
+    "Models/Classification/KNoW/FBCCA.py": "0d9db4250817f7f40e6d048895acd5fd4bea98196d3757403b149f70ac551a7b",
+    "Models/Classification/KNoW/MSI.py": "07e2352ef31461952fc919c5e7081b018412a78ac448f2e22b039db2f433c4f5",
+    "Models/Classification/KNoW/TDCA.py": "b4d1ea6767faf532ae1480d885150c519a26f76ea643b79402df049fc9e7b450",
+    "Models/Classification/KNoW/TRCA.py": "57ea2718c3e6c965804fc9e77bf0b2740da139fe0d590475a9c21e920610b33e",
+    "Models/Classification/HZTKD/Hztlayer.py": "62f543707ee10de3710da2abddf7695c5d4ab992425f0dbb2c853efa67f7784c",
+    "Models/Classification/DeepL/CCNN.py": "2a6dabd0535c77d49f8a6127a61c600be43c2c2d1a4b87d3b576026cde71bd9e",
+    "Models/Classification/DeepL/ConvCA.py": "78ce2c437a4e156566b5b27e9745237d0fc4cd393bc45bcb23feeec0efcb1ecb",
+    "Models/Classification/DeepL/DDGCNN.py": "4074fbb1f83904cb551f270b78860e6aceadab9afeaf10fa91a5d14b744b02d9",
+    "Models/Classification/DeepL/EEGNet.py": "d6638e22842f0c3a52637d7875efd7745423a2e8bfb7bc873eae855f9f4c07cc",
+    "Models/Classification/DeepL/FBtCNN.py": "064926da11bbe7a57682b4438df15f71b40cef58b4fdb7c36f76c35ed3a037f7",
+    "Models/Classification/DeepL/SSVEPNet.py": "49d5eef4e720056647f057b6aecf997b27fa309c8414cd27ef29471599a8e73a",
+    "Models/Classification/DeepL/SSVEPformer.py": "64bfec1d4320dee331832cdb6b903ec2e16072776635447ade7c6a0929f28779",
+    "Models/Classification/DeepL/EnhancedSSVEPformer.py": "9e532adba7540593ede9d35e6ff33611b90251db71f0c3e416b21ed5b6ebd040",
+    "Models/Classification/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Support/__init__.py": "f01a374e9c81e3db89b3a42940c4d6a5447684986a1296e42bf13f196eed6295",
+    "Support/config.py": "e05566e762aa7506122f3db77c4521305e2a174673177457ae79dcc97a614939",
+    "Support/utils.py": "fc32c27ac661be43a359b3e9ba033af8decc2d6800eb9637cb9986a4f60d9144",
+    "Support/experiment.py": "e4d46b7644b6152ee6ab2f48144a6c14a49b1198fe3f8446de8573e2490c9a8d",
+    "Trainers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Trainers/Classification/__init__.py": "9f98fc2f42f8a57298d4f34763d36dde25e0de460dfc607ca00ccc24039666d5",
+    "Trainers/Classification/core.py": "5b210b8386ba01cd1f91794d39e56ef3ef4887ebb21cf4f316ede041cc9fae93",
+    "Trainers/Classification/hybrid.py": "673c2d6610365caf38d5b8e7154ec9d2cb5bbff9a2fc2976c1427bd4675d2159"
+  }
+}

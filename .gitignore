@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+datasets/
+results/
+logs/
+etc/generated/
+*.mat
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.log
+.DS_Store
+Thumbs.db
